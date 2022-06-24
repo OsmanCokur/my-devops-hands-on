@@ -5,3 +5,7 @@ output "tf_example_public_ip" {
 output "tf_example_s3_meta" {
   value = aws_s3_bucket.tf-s3.region
 }
+
+output "tf-example-s3" {
+  value = aws_s3_bucket.tf-s3[*]
+}
